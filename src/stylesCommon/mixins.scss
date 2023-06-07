@@ -1,0 +1,25 @@
+$primay-gray:#DEEDF4;
+$primary-card-color: #ECBCCC;
+$primary-card-left-color:#EFE1E0;
+$full-black:black;
+
+//media query 
+
+//mobile
+@mixin for-phone-only {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+//   tablet
+  @mixin for-tablet-only {
+    @media (min-width: 769px) and (max-width: 1200px) {
+      @content;
+    }
+  }
+//   desktop
+  @mixin for-desktop {
+    @media (min-width: 1400px) {
+      @content;
+    }
+  }

@@ -1,0 +1,84 @@
+@import "../stylesCommon/mixins.scss";
+
+
+.title-bar{
+    text-align: center;
+}
+.cardContainer-wrapper{
+    background-color: $primay-gray;
+     display: block;
+     padding-top:20px;
+     @include for-tablet-only{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+     }
+    @include for-desktop{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .card-container{
+        background-color: $primary-card-color;
+        border-radius: 25px;
+        display: flex;
+        margin:30px auto;
+        width:80% ;
+        @include for-tablet-only{
+            width:45%;
+            margin:20px;
+        }
+        @include for-desktop{
+            width:28%;
+            margin:20px;
+        }
+        
+    .card-left-content{
+       background-color: $primary-card-left-color;
+        border-radius:0 20px;
+        padding: 0 0 20px 0;
+        width:40%;
+        .image-container{
+
+            .image-content{
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+            }
+        }
+        .contact-info-box{
+            margin-left: 15px;
+            .contact-box-title{
+                font-weight: bold;
+                margin: 0;
+            }
+            .tel-phone-number{
+                margin: 0;
+                cursor: pointer;
+            }
+            .mail-contact{
+                cursor: pointer;
+                font-weight: bold;
+                margin: 0;
+            }
+            a{
+                font-size: 13px;
+                text-decoration: none;
+                color: $full-black;
+            }
+        }
+    }
+    .user-details{
+       margin-left:20px;
+       width: 50%;
+       box-sizing: border-box;
+       .designation-data{
+        font-size: 13px;
+       }
+       .name-content{
+        font-size: 18px;
+       }
+    }
+    }
+
+}
