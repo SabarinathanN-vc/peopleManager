@@ -1,0 +1,12 @@
+.button{
+    &.MuiButton-root {
+        border-radius: 10px;
+        letter-spacing: 0.1rem;
+        text-transform: none;
+        font-weight: 500;
+        &.Mui-disabled {
+            color: rgb(213, 39, 39);
+            opacity: 0.8;
+        }
+    }
+}

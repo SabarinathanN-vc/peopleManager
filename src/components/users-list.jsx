@@ -1,7 +1,7 @@
 import React, { useState ,useEffect} from "react";
 // people mangement url is coming from constan file for future changing of url(esasy to maintain) 
-import PeopleManagementURL from "../utils/constant";
-import ReadData from "../utils/httpMthodHandling";
+import {PeopleManagementURL} from "../utils/constant";
+import {ReadData} from "../utils/httpMthodHandling";
 import "./users-list.scss";
 
 const UserList = () => {
@@ -26,8 +26,10 @@ const UserList = () => {
             {/* here we using map function to get array of individual datas ,here we creating a template for the card list to render the data to particular area  */}
         {userDetails.map((res)=>{
             return (
-                <div className="card-container">
+                // key is used for unique cards
+                <div className="card-container" key={res.id}>
                 <div className="card-left-content">
+                    <div className="left-container-wrapper">
                    <div className="image-container">
                    <img className="image-content" src={res.image}></img>
                     </div> 
@@ -35,6 +37,7 @@ const UserList = () => {
                     <p className="contact-box-title">Contact</p>
                      <p className="tel-phone-number"> <a href={`tel:${res.phone}`}>{`M:${res.phone}`}</a></p> 
                      <p className="mail-contact"><a href={`mailto:${res.email}`}>Connect with Email</a></p>
+                    </div>
                     </div>
                 </div>
                 <div className="user-details">
