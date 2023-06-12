@@ -180,7 +180,7 @@ const arraygenderListsanity = () => {
             "firstname": inputVals.firstName,
             "lastname": inputVals.lastName,
             "email": inputVals.email,
-            "contact": inputVals.phoneNumber,
+            "phonenumber": inputVals.phoneNumber,
             "gender": inputVals.gender,
             "password": inputVals.password
         }

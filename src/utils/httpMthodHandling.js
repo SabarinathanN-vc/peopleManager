@@ -32,3 +32,16 @@ export const PostData =((url,payload,headers ={})=>{
     })
     return sendData
 })
+
+export const DeleteData =((url,headers ={})=>{
+    const deleteData =new Promise((resolve,reject)=>{
+        axios.delete(url,headers)
+        .then((res) =>{
+            resolve(res)
+        })
+        .catch((err)=>{
+            reject(err)
+        })
+    })
+    return deleteData
+})

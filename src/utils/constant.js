@@ -1,8 +1,8 @@
 const PeopleManagementURL = {
-    USER_DETAILS: "https://dummyjson.com/users"
+    USER_DETAILS: "https://dummyjson.com/users/"
 };
 const UserCRUDportal ={
-    CRUD_USER_DETAILS: "https://648551caa795d24810b6d720.mockapi.io/users"
+    CRUD_USER_DETAILS: "https://648551caa795d24810b6d720.mockapi.io/users/"
 }
 const LocationApi ={
     LOCATION:"https://ipapi.co/json"

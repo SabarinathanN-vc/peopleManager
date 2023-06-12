@@ -6,7 +6,7 @@ const Button =((props)=>{
     const {
         type='',
         disabled = false,
-        onclick= ()=> false,
+        onclick= ()=> null,
         buttonText="",
     } = props
     return(
